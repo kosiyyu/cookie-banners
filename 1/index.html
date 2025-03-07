@@ -44,7 +44,34 @@
             <div class="cookie-text">Use the "Accept" button to consent.</div>
         </div>
         <div class="cookie-container-split"></div>
-        <div class="center cookie-container">
+        <div id="cookie-option">
+            <div class="cookie-container cookie-options">
+                <label class="cookie-text cookie-label disabled-label"
+                    title="These cookies are essential for the website to function and cannot be disabled.">
+                    <input checked disabled type="checkbox" class="cookie-checkbox" />Necessary
+                </label>
+                <label class="cookie-text cookie-label"
+                    title="These cookies allow the website to remember your preferences (e.g., language, region).">
+                    <input checked type="checkbox" class="cookie-checkbox" />Preferences
+                </label>
+                <label class="cookie-text cookie-label"
+                    title="These cookies collect anonymous data about how visitors use the website for analytics purposes.">
+                    <input checked type="checkbox" class="cookie-checkbox" />Statistics
+                </label>
+                <label class="cookie-text cookie-label"
+                    title="These cookies track your online activity to deliver targeted advertisements.">
+                    <input checked type="checkbox" class="cookie-checkbox" />Marketing
+                </label>
+            </div>
+            <div class="cookie-container">
+                <div class="cookie-text">
+                    Detailed information about each cookie is available when you hover your mouse over the label.
+                </div>
+            </div>
+            <div class="cookie-container-split"></div>
+        </div>
+
+        <div id="cookie-buttons" class="center cookie-container">
             <button class="cookie-button cookie-button-left">
                 More Options
             </button>
@@ -52,8 +79,16 @@
                 Agree & Continue
             </button>
         </div>
-    </div>
+        <div id="cookie-option-buttons" class="center cookie-container">
+            <button class="cookie-button cookie-button-left">
+                Reject
+            </button>
+            <button class="cookie-button cookie-button-right">
+                Accept Selected
+            </button>
+        </div>
 
+        <script type="module" src="script.js"></script>
 </body>
 
 </html>
